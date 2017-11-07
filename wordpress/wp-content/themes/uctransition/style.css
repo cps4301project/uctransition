@@ -1,0 +1,384 @@
+/* 
+Theme Name: UC Transition
+Author: CPS4301 Software Engineering
+Author URI: https://github.com/cps4301project
+Version: 1.0
+*/
+
+html, body {
+	width: auto !important;	
+	font-family: "Helvetica Neue Light", "Helvetica Neue", "HelveticaNeue-Light",  "Helvetica", sans-serif;
+	overflow-x: hidden !important;
+
+	transition: .15s ease-in-out;
+	transition-property: background-position;
+	-webkit-transition: .15s ease-in-out;
+	-moz-transition: .15s ease-in-out;
+	-o-transition: .15s ease-in-out;
+
+	-webkit-transition-property: background-position;
+	-moz-transition-property: background-position;
+	-o-transition-property: background-position;
+}
+
+h2 {
+	font-weight: 300;
+}
+
+a:link, a:visited {
+	text-decoration: none;
+}
+
+header a:link,
+header a:visited {
+	color: #f0f0f0;
+	text-shadow: 5px 5px 10px black;
+	font-weight: 300;
+	letter-spacing: 2px;
+	text-decoration: none;
+}
+
+p {
+	line-height: 1.65em;
+}
+
+#read-more-btn {
+
+}
+
+/* General Layout */
+.parallax-container {
+	height: 400px;
+	width: 100%;
+	background: transparent;
+}
+
+div.content {
+	background-color: #f0f0f0;
+	color: #0f0f0f;
+	padding: 10px 10px 20px 10px;
+	border-bottom: 2px dotted #999;
+	height: auto;
+	overflow: auto;
+}
+
+div.content:last-of-type {
+	border-bottom: none;
+}
+
+article.post {
+	border-bottom: 2px solid #999;
+}
+
+article.post:last-of-type {
+	border-bottom: none;
+}
+
+.container-fluid, .container {
+	padding-right: 0;
+	padding-left: 0;
+	margin-left: auto;
+	margin-right: auto; 
+}
+
+.post-container {
+	height: auto;
+}
+
+.post-container h2 {
+	font-size: 1.3em;
+}
+
+img.wp-post-image {
+	display: block;
+	margin: 0 auto;
+}
+
+/* Header */
+.site-header {
+	margin-top: 50px;
+	color: #f0f0f0;
+	text-shadow: 3px 3px 5px black;
+	letter-spacing: 1px;
+	padding-top: 40px;
+}
+
+.site-header h1 {
+	margin-top: 0;
+	font-size: 5em;
+	font-family: 'Quicksand', cursive;
+}
+
+.site-header h2 {
+	font-size: 3em;
+	font-family: 'Handlee', cursive;
+}
+
+/* Footer */
+.site-footer {
+	margin-top: 30px;
+	border-top: 2px solid #999;
+}
+
+/* Navigation Menus */
+.site-nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+.site-nav ul:before, .site-nav ul:after { content: ""; display: table; }
+.site-nav ul:after { clear: both; }
+.site-nav ul { *zoom: 1; }
+
+.site-nav ul li {
+	list-style: none;
+	float: left;
+}
+
+.navbar {
+	position: fixed;
+}
+
+.navbar-brand {
+	position: absolute;
+	left: 50%;
+	padding-top: 5px;
+	margin-left: -50px !important;
+	display: block;
+	z-index: 1;
+}
+
+/* Site Header Menu */
+.site-header nav ul li {
+	margin-right: 5px; 
+}
+
+.site-header nav ul li a:link,
+.site-header nav ul li a:visited {
+	display: block;
+	padding: 10px 18px;
+	border: 1px solid #bbb;
+	border-bottom: none;
+	text-decoration: none;
+}
+
+.site-header nav ul li a:hover {
+	background-color: #f0f0f0;
+}
+
+.site-header nav ul li.current-menu-item a:link,
+.site-header nav ul li.current-menu-item a:visited {
+	background-color: #2965a8;
+	color: #fff;
+}
+
+/* Front Page */
+.showcase {
+	height: 100vh;
+	width: 100%;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	text-align: center;
+	color: #fff;
+
+	background: url('../uctransition/img/showcase.jpg');
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: -1;
+}
+
+.showcase h1 {
+	font-family: 'Quicksand', cursive;
+	font-size: 5em;
+	padding-bottom: 20px;
+	color: #fff;
+}
+
+.showcase h2 {
+	font-family: 'Handlee', cursive;
+	font-size: 3em;
+	margin-bottom: 50px;
+}
+
+.showcase p {
+	font-size: 1.3em;
+	font-weight: 100;
+}
+
+.showcase .fa {
+	font-size: 6em;
+}
+
+.showcase-text {
+	padding: 30px;
+	margin-bottom: 20px;
+	background-color: rgba(102, 102, 102, 0.4);
+}
+
+.showcase-boxes {
+	background-color: rgba(255, 255, 255, 0.9);
+	color: #000;
+	height: auto;
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+
+.box {
+	border-right: 1px solid #ccc;
+}
+
+.box ul, .box li {
+	list-style-type: none;
+	margin: 0;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+.box h2 {
+	font-family: initial;
+	font-size: 2em;
+	margin-bottom: 10px;
+}
+
+.box h3 {
+	font-size: 1.5em;
+}
+
+.box li {
+	font-size: 0.9em;
+}
+
+/* Footer Menu */
+.site-footer nav ul li {
+	margin-right: 10px;
+	padding-right: 10px;
+	border-right: 1px dotted #bbb;
+}
+
+/* Page Layout */
+article.page h2 {
+	font-size: 300%;
+}
+
+.page-content {
+	padding: 30px;
+}
+
+/* Correct display on smaller screen sizes */
+@media screen and (max-width: 480px) {
+	body {
+		font-size: 10px;
+	}
+	
+	.site-header {
+		background-attachment: initial;
+	}
+
+	.site-header h1 {
+		margin-top: 0;
+		font-size: 2.5em;
+	}
+
+	.site-header h2 {
+		margin-top: 0;
+		font-size: 1.5em;
+	}
+
+/*	
+	.showcase {
+		background-attachment: initial;
+	}
+*/
+	
+	.showcase h1 {
+		font-size: 3.5em;
+	}
+
+	.showcase h2 {
+		font-size: 2em;
+		margin-bottom: 10px;
+	}
+
+	.box {
+		border-bottom: 1px solid #ccc;
+	}
+
+}
+
+@media screen and (max-width: 640px) {
+	body {
+		font-size: 14px;
+	}
+
+	.site-header {
+		background-attachment: initial;
+	}
+
+	.site-header h1 {
+		margin-top: 0;
+		font-size: 2.5em;
+	}
+
+	.site-header h2 {
+		margin-top: 0;
+		font-size: 1.5em;
+	}
+
+/*	
+	.showcase {
+		background-attachment: initial;
+	}
+*/
+
+	.showcase h1 {
+		font-size: 3.5em;
+	}
+
+	.showcase h2 {
+		font-size: 2em;
+		margin-bottom: 10px;
+	}
+
+	.box {
+		border-bottom: 1px solid #ccc;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	body {
+		font-size: 14px;
+	}
+
+	.site-header {
+		background-attachment: initial;
+	}
+
+	.site-header h1 {
+		margin-top: 0;
+		font-size: 2.5em;
+	}
+
+	.site-header h2 {
+		margin-top: 0;
+		font-size: 1.5em;
+	}
+/*	
+	.showcase {
+		background-attachment: initial;
+	}
+*/
+	.showcase h1 {
+		font-size: 3.5em;
+	}
+
+	.showcase h2 {
+		font-size: 2em;
+		margin-bottom: 10px;
+	}
+
+	.box {
+		border-bottom: 1px solid #ccc;
+	}
+}
