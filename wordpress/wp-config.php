@@ -20,19 +20,21 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'wordpress');
+define('WP_CACHE', false); //Added by WP-Cache Manager
+define( 'WPCACHEHOME', '' ); //Added by WP-Cache Manager
+define('DB_NAME', '2495462_admin');
 
 /** MySQL database username */
-define('DB_USER', 'steve');
+define('DB_USER', '2495462_admin');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'infosys');
+define('DB_PASSWORD', '2017softwareengineer');
 
 /** MySQL hostname */
-define('DB_HOST', 'localhost');
+define('DB_HOST', 'localhost:8888');
 
 /** Database Charset to use in creating database tables. */
-define('DB_CHARSET', 'utf8');
+define('DB_CHARSET', 'utf8mb4');
 
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
@@ -46,14 +48,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'put your unique phrase here');
-define('SECURE_AUTH_KEY',  'put your unique phrase here');
-define('LOGGED_IN_KEY',    'put your unique phrase here');
-define('NONCE_KEY',        'put your unique phrase here');
-define('AUTH_SALT',        'put your unique phrase here');
-define('SECURE_AUTH_SALT', 'put your unique phrase here');
-define('LOGGED_IN_SALT',   'put your unique phrase here');
-define('NONCE_SALT',       'put your unique phrase here');
+define('AUTH_KEY',         '9I5)lL$zyZGn9!djtJr%4-(9SmwG;=n<v4-l/VYA#kV/K:G0)i!BvM):DSwUj!C9');
+define('SECURE_AUTH_KEY',  '/j`BrG-S;^O/x!B*FXBZ$4<@]+tf8m}l)?Mgd[m29K(<,6JmCbB,p2-f;2WLbU#/');
+define('LOGGED_IN_KEY',    '*r/(wELN8!:?;xo[q2hAl_<XB_Gq98HVjLo9De%Op4K?>;Z>D|U!umVM3l3=%4qZ');
+define('NONCE_KEY',        '_KD25?O80}]Yo}o)EoqLuqsQCMwO]KTK@#si2oi_Eiv.2r 6$d]Og>t,JmX[ akS');
+define('AUTH_SALT',        '&Y0$rWH7-NL/W@l7pEOVN7s}O+QX*t8Ul-^)BiKvq;^NPDX{<fRC%:@UG>;L68i;');
+define('SECURE_AUTH_SALT', 'yGVHK,hW.!ge6{M}cv[u6|w@X-f)C{K(iEdM7<euDJ=W wwDN+uA-/VNP4tEKK71');
+define('LOGGED_IN_SALT',   'u:t}<PD-1P&2l4~Aq0!1XK,Vfqq-GsOjLsEVZGkb0fm2~h,oPGx%{5l6j]`~7JyR');
+define('NONCE_SALT',       '7HY+:up]_=se~p>::X-0&B=J;hly9(zR<DQSJ,22e L0,7u#GM/D>l(j1qki6-?<');
 
 /**#@-*/
 
