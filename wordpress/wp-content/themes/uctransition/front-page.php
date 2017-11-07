@@ -31,10 +31,11 @@
 				</div>
 				<div class="box col-md-4">
 					<i class="fa fa-calendar" aria-hidden="true"></i>
-					<h2>Events</h2>
-					[tribe_mini_calendar]
+					<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("homepage-calendar") ) : ?>
+					<?php endif;?>
+
 				</div>
-				<div class="box col-md-4">
+				<div class="box col-md-4 widgetizedArea">
 					<i class="fa fa-handshake-o" aria-hidden="true"></i>
 					<h2>Resources</h2>
 					<? $catquery = new WP_Query( array( 'category_name' => 'jacked-kirby-podcast', 'posts_per_page' => 1 ) ); ?>

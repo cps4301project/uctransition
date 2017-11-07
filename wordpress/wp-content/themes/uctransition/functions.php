@@ -48,6 +48,32 @@ if (!is_admin()) {
 
 } // end if !is_admin
 
+// Register our sidebars and widgetized areas.
+
+function arphabet_widgets_init() {
+
+	register_sidebar( array(
+		'name'          => 'Home right sidebar',
+		'id'            => 'home_right_1',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="rounded">',
+		'after_title'   => '</h2>',
+	) );
+
+}
+add_action( 'widgets_init', 'arphabet_widgets_init' );
+
+if ( function_exists('register_sidebar') )
+  register_sidebar(array(
+    'name' => 'homepage-calendar',
+    'before_widget' => '<div class = "widgetizedArea">',
+    'after_widget' => '</div>',
+    'before_title' => '<h2>',
+    'after_title' => '</h2>',
+  )
+);
+
 // Register Custom Navigation Walker
 require_once('wp-bootstrap-navwalker.php');
 
