@@ -13,7 +13,7 @@
 				<div class="box col-md-4">
 					<i class="fa fa-newspaper-o" aria-hidden="true"></i>
 					<h2>News</h2>
-					<? $catquery = new WP_Query( array( 'category_name' => 'ccd-podcast', 'posts_per_page' => 1 ) ); ?>
+					<? $catquery = new WP_Query( array( 'category_name' => 'news', 'posts_per_page' => 2 ) ); ?>
 					<ul>
 					<? while($catquery->have_posts()) : $catquery->the_post(); ?>
 					<li>
@@ -38,7 +38,7 @@
 				<div class="box col-md-4 widgetizedArea">
 					<i class="fa fa-handshake-o" aria-hidden="true"></i>
 					<h2>Resources</h2>
-					<? $catquery = new WP_Query( array( 'category_name' => 'jacked-kirby-podcast', 'posts_per_page' => 1 ) ); ?>
+					<? $catquery = new WP_Query( array( 'category_name' => 'links', 'posts_per_page' => 1 ) ); ?>
 					<ul>
 					<? while($catquery->have_posts()) : $catquery->the_post(); ?>
 					<li>

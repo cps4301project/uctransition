@@ -65,13 +65,13 @@ function arphabet_widgets_init() {
 add_action( 'widgets_init', 'arphabet_widgets_init' );
 
 if ( function_exists('register_sidebar') )
-  register_sidebar(array(
-    'name' => 'homepage-calendar',
-    'before_widget' => '<div class = "widgetizedArea">',
-    'after_widget' => '</div>',
-    'before_title' => '<h2>',
-    'after_title' => '</h2>',
-  )
+	register_sidebar( array(
+		'name'			=> 'homepage-calendar',
+		'before_widget'	=> '<div class = "widgetizedArea">',
+		'after_widget'	=> '</div>',
+		'before_title'	=> '<h2>',
+		'after_title'	=> '</h2>',
+	)
 );
 
 // Register Custom Navigation Walker
